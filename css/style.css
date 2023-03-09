@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    /* Estilos generales para el header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+  /* Estilos para el logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+  /* Estilos para el menú de navegación */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .menuItem {
+        margin: 0 15px;
+        position: relative;
+    }
+
+    .menuItem a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .cart img{
+        width: 25px;
+        height: 25px;
+    }
+
+  /* Estilos para el sub-menú */
+    .subMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subMenu li {
+        margin: 5px 0;
+    }
+
+    .subMenuItem a {
+        font-weight: normal;
+        padding: 5px 0;
+    }
+
+  /* Estilos para la flecha del sub-menú */
+    .menuItem:hover .subMenu {
+        display: block;
+    }
+
+    .menuItem:hover a {
+        color: #f84c4c;
+    }
+
+    .subMenu:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -10px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+    }
+
+    .subMenu:after {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        margin-left: -12px;
+        border: 12px solid transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para la sección Hero */
+    .hero {
+        background-image: url("");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+
+    .heroTitle {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #f84c4c;
+    }
+
+    .heroDescription {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        color: #000;
+    }
+
+    .heroBtn {
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .heroBtn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .twocolumnssection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .column1 {
+        flex-basis: 50%;
+        padding: 0 20px;
+    }
+
+    .imagecontainer {
+        max-width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagecontainer img {
+        width:300px;
+        height: 480px;
+        border-radius: 10px;
+    }
+
+    .column2 {
+        flex-basis: 50%;
+        padding: 0 20px;
+    }
+
+    .Title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .Description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .Link {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .Link:hover {
+        background-color: #555;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .galleryItem {
+        width: 30%;
+        margin-bottom: 30px;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .galleryItem:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f8f8;
+        padding: 50px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footerColumnTitle {
+        color: #222;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footerLogo {
+        align-items: center;
+        width: 300px;
+        height: 180px;
+    }
+
+    .footerServicesList,
+    .footerLegalList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footerServiceItem,
+    .footerLegalItem {
+        margin-bottom: 10px;
+    }
+
+    .footerServiceLink,
+    .footerLegalLink {
+        color: #555;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footerServiceLink:hover,
+    .footerLegalLink:hover {
+        color: #222;
+    }
+
+    .footerSocialLinks {
+        display: flex;
+    }
+
+    .footerSocialLink {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+    }
+
+    .footerFacebookLink {
+        background-image: url('/assets/img/linkedin.png');
+    }
+
+    .footerTwitterLink {
+        background-image: url('/assets/img/linkedin.png');
+    }
+
+    .footerInstagramLink {
+        background-image: url('/assets/img/linkedin.png');
+    }
+
+    .footerPinterestLink {
+        background-image: url('/assets/img/linkedin.png');
+    }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .galleryItem {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .galleryItem {
+        width: 100%;
+    }
+}
+
+
